@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ремонт компьютеров</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Ремонт компьютеров, ноутбуков и принтеров, заправка картриджей в Рогачеве</h1>
+        <p style="font-size: large">Услуги сервиса ремонта компьютерной и орг техники!</p>
+        <p>
+            {% for service in services %}
+                <b>{{ service.title }}</b>
+                от {{ service.price }}руб.<br>
+            {% endfor %}
+        </p>
+    </div>
+</body>
+</html>
